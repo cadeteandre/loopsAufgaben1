@@ -105,15 +105,15 @@ console.log('%c Loops Level-2_1 ', 'background: black; color: gold;');
 
 const createImageNames = () => {
     let returnArr = [];
-    let stringTest: string = 'image_';
+    let imageName: string = 'image_';
     for(let i: number = 100; i < 101; i++) {
         for(let j: number = 1; j < 10; j++) {
-            returnArr.push(`${stringTest.padEnd(8, '0')}${j}.jpg`);
+            returnArr.push(`${imageName.padEnd(8, '0')}${j}.jpg`);
         }
         for(let k: number = 10; k < 100; k++) {
-            returnArr.push(`${stringTest.padEnd(7, '0')}${k}.jpg`);
+            returnArr.push(`${imageName.padEnd(7, '0')}${k}.jpg`);
         }
-        returnArr.push(`${stringTest}${i}.jpg`);
+        returnArr.push(`${imageName}${i}.jpg`);
     }
     return returnArr;
 }
